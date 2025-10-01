@@ -1,0 +1,25 @@
+services:
+  # Backend API Service
+  - type: web
+    name: ecommerce-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false # Set this in Render dashboard
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRE
+        value: 7d
+      - key: CLIENT_URL
+        sync: false # Set this to your frontend URL
+      - key: FRONTEND_URL
+        sync: false # Set this to your frontend URL
