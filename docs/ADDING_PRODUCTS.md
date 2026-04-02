@@ -339,9 +339,7 @@ npm test
 ## 📚 Additional Resources
 
 - **API Documentation**: `backend/README.md`
-- **Testing Guide**: `TESTING_DOCUMENTATION.md`
 - **Setup Guide**: `SETUP_GUIDE.md`
-- **Deployment Guide**: `DEPLOYMENT.md`
 
 ---
 

@@ -689,7 +689,7 @@ After completing the setup:
    - Place an order
 
 2. **Test the APIs**
-   - Use Postman or the included `postman_collection.json`
+   - Use cURL or API testing tools
    - Test authentication endpoints
    - Test CRUD operations
 

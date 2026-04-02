@@ -242,7 +242,6 @@ After setup, you can access:
 - [Frontend README](./frontend/README.md) - Frontend guide
 - [API Testing Guide](./backend/API_TESTING_GUIDE.md) - Testing workflows
 - [Architecture](./backend/ARCHITECTURE.md) - System design
-- [Postman Collection](./backend/postman_collection.json) - API testing
 
 ## 🎉 You're All Set!
 

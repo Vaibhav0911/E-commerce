@@ -45,120 +45,66 @@ Welcome to the E-Commerce Application! This index will help you navigate all the
   - Database schema
   - Security layers
 
-### Testing & Quality
-- **[TESTING_GUIDE.md](./TESTING_GUIDE.md)**
-  - 10 complete test scenarios
-  - 50+ test cases
-  - Testing checklist
-  - Expected results
-  - Common issues
-
-### Deployment & Integration
-- **[DEPLOYMENT.md](./DEPLOYMENT.md)** ⭐ **DEPLOYMENT GUIDE**
-  - Complete deployment guide (5,000+ lines)
-  - MongoDB Atlas setup
-  - Render backend deployment
-  - Netlify/Vercel frontend deployment
-  - CI/CD with GitHub Actions
-  - Troubleshooting
-  - Security checklist
-
-- **[DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)**
-  - Quick deployment checklist
-  - Step-by-step tasks
-  - Success criteria
-  - 30-60 minute deployment
-
-- **[DEPLOYMENT_QUICK_REFERENCE.md](./DEPLOYMENT_QUICK_REFERENCE.md)**
-  - One-page deployment reference
-  - Quick commands
-  - Environment variables
-  - Troubleshooting tips
-
-- **[DOCKER_DEPLOYMENT.md](./DOCKER_DEPLOYMENT.md)**
-  - Docker deployment guide (3,000+ lines)
-  - Docker Compose usage
-  - Individual containers
-  - Production deployment
-  - Monitoring and backup
-
-- **[INTEGRATION_SUMMARY.md](./INTEGRATION_SUMMARY.md)**
-  - Frontend-backend integration (4,000+ lines)
-  - API integration with Axios
-  - CORS configuration
-  - Authentication flow
-  - State management
-  - Deployment configuration
-
-- **[INTEGRATION_COMPLETE.md](./INTEGRATION_COMPLETE.md)**
-  - Integration completion report
-  - All files created/modified
-  - Features implemented
-  - Deployment readiness
-  - Cost breakdown
+### Development & Setup
+- **[ADDING_PRODUCTS.md](./ADDING_PRODUCTS.md)**
+  - Product seeding guide
+  - Sample data setup
+  - Database population
 
 ## 🔧 Backend Documentation
 
-Located in `backend/` directory:
+Located in `docs/backend/` directory:
 
-1. **[backend/README.md](./backend/README.md)**
+1. **[Backend README](backend/README.md)**
    - Complete API documentation
    - Endpoint details
    - Request/response examples
    - Security features
-   - 400+ lines
 
-2. **[backend/QUICKSTART.md](./backend/QUICKSTART.md)**
+2. **[Backend Quick Start](backend/QUICKSTART.md)**
    - Backend-specific setup
    - MongoDB configuration
    - Environment variables
    - Testing with cURL
 
-3. **[backend/API_TESTING_GUIDE.md](./backend/API_TESTING_GUIDE.md)**
+3. **[API Testing Guide](backend/API_TESTING_GUIDE.md)**
    - 19-step testing workflow
    - cURL examples
    - Postman guide
    - Error scenarios
 
-4. **[backend/ARCHITECTURE.md](./backend/ARCHITECTURE.md)**
+4. **[Backend Architecture](backend/ARCHITECTURE.md)**
    - Visual system diagrams
    - Request flow charts
    - Security architecture
    - Data relationships
-   - Deployment architecture
 
-5. **[backend/QUICK_REFERENCE.md](./backend/QUICK_REFERENCE.md)**
+5. **[Backend Quick Reference](backend/QUICK_REFERENCE.md)**
    - API cheat sheet
    - Quick commands
    - Common operations
    - Endpoint summary
 
-6. **[backend/INDEX.md](./backend/INDEX.md)**
+6. **[Backend Documentation Index](backend/INDEX.md)**
    - Backend documentation navigation
    - Learning paths
    - Role-based guides
 
-7. **[backend/PROJECT_SUMMARY.md](./backend/PROJECT_SUMMARY.md)**
+7. **[Backend Project Summary](backend/PROJECT_SUMMARY.md)**
    - Backend overview
    - Features checklist
    - Tech stack details
 
-8. **[backend/postman_collection.json](./backend/postman_collection.json)**
-   - Ready-to-import Postman collection
-   - All endpoints configured
-   - Environment variables
-
 ## 🎨 Frontend Documentation
 
-Located in `frontend/` directory:
+Located in `docs/frontend/` directory:
 
-1. **[frontend/README.md](./frontend/README.md)**
+1. **[Frontend README](frontend/README.md)**
    - Complete frontend guide
    - Component structure
    - State management
    - Context API usage
    - Styling guide
-   - 300+ lines
 
 ## 📁 Project Structure
 
@@ -168,29 +114,13 @@ E-commerce/
 ├── 📄 START.md                    ⭐ START HERE
 ├── 📄 README.md                   Main documentation
 ├── 📄 QUICKSTART.md               Quick setup guide
-├── 📄 TESTING_GUIDE.md            Testing workflows
+├── 📄 SETUP_GUIDE.md              Complete setup guide
 ├── 📄 FEATURES.md                 Features list
 ├── 📄 PROJECT_SUMMARY.md          Project overview
 ├── 📄 ARCHITECTURE_OVERVIEW.md    Architecture diagrams
+├── 📄 ADDING_PRODUCTS.md          Product seeding guide
 ├── 📄 INDEX.md                    This file
-├── 📄 DEPLOYMENT.md               ⭐ Deployment guide
-├── 📄 DEPLOYMENT_CHECKLIST.md     Deployment checklist
-├── 📄 DEPLOYMENT_QUICK_REFERENCE.md Quick deployment ref
-├── 📄 DOCKER_DEPLOYMENT.md        Docker guide
-├── 📄 INTEGRATION_SUMMARY.md      Integration details
-├── 📄 INTEGRATION_COMPLETE.md     Integration report
-├── 📄 docker-compose.yml          Docker Compose config
 ├── 📄 .dockerignore               Docker ignore rules
-│
-├── 📁 .github/                    CI/CD workflows
-│   └── 📁 workflows/
-│       └── 📄 deploy.yml          GitHub Actions
-│
-├── 📁 scripts/                    Deployment scripts
-│   ├── 📄 deploy-backend.ps1      Windows backend deploy
-│   ├── 📄 deploy-frontend.ps1     Windows frontend deploy
-│   ├── 📄 deploy-backend.sh       Linux/Mac backend deploy
-│   └── 📄 deploy-frontend.sh      Linux/Mac frontend deploy
 │
 ├── 📁 backend/                    Backend API
 │   ├── 📄 README.md
