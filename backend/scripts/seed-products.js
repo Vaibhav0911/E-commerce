@@ -1,6 +1,8 @@
+const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const Product = require('../models/Product');
-require('dotenv').config();
+
+dotenv.config();
 
 const sampleProducts = [
   {
@@ -128,7 +130,12 @@ const sampleProducts = [
 const seedProducts = async () => {
   try {
     // Connect to MongoDB
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ecommerce');
+    console.log(process.env.MONGODB_URI);
+    
+    await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     console.log('✅ MongoDB Connected');
 
     // Clear existing products (optional - comment out if you want to keep existing products)

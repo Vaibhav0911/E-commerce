@@ -29,9 +29,9 @@ function App() {
               <Routes>
                 {/* Public Routes */}
                 <Route path="/" element={<Home />} />
-                <Route path="/products/:id" element={<ProductDetails />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<Signup />} />
+                <Route path="/products/:id" element={ <ProductDetails /> } />
+                <Route path="/login" element={<Login />  } />
+                <Route path="/signup" element={<Signup />  } />
 
                 {/* Protected Routes */}
                 <Route

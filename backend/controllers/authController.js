@@ -51,7 +51,7 @@ exports.signup = async (req, res, next) => {
 exports.login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
-
+    
     // Check if email and password are provided
     if (!email || !password) {
       return res.status(400).json({
@@ -59,7 +59,7 @@ exports.login = async (req, res, next) => {
         message: 'Please provide email and password',
       });
     }
-
+    
     // Check for user (include password field)
     const user = await User.findOne({ email }).select('+password');
 
@@ -78,11 +78,11 @@ exports.login = async (req, res, next) => {
         success: false,
         message: 'Invalid credentials',
       });
-    }
+    } 
 
     // Generate token
     const token = generateToken(user._id);
-
+    
     res.status(200).json({
       success: true,
       message: 'Login successful',

@@ -38,11 +38,11 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       setError(null);
+      console.log(email, password);
       const response = await authAPI.login({ email, password });
-      const { token, user } = response.data.data;
-      
+      const { token } = response.data.data;
       localStorage.setItem('token', token);
-      setUser(user);
+      setUser(response.data.data);
       return { success: true };
     } catch (error) {
       const message = error.response?.data?.message || 'Login failed';
@@ -55,10 +55,10 @@ export const AuthProvider = ({ children }) => {
     try {
       setError(null);
       const response = await authAPI.signup(userData);
-      const { token, user } = response.data.data;
-      
+      const { token } = response.data.data;
+      // console.log(user);
       localStorage.setItem('token', token);
-      setUser(user);
+      setUser(response.data.data);
       return { success: true };
     } catch (error) {
       const message = error.response?.data?.message || 'Signup failed';
